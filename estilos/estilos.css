@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: rgb(0, 144, 187);
+    width: 100%;
+}
+.bNav{
+    display: flex;
+    justify-content: space-between;
+ 
+}
+.menu{
+    display: flex;
+    list-style-type: none;
+    margin: 0px 50px 0px 0px; 
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.navMenuItem{
+    font-size: 18px;
+    margin: 0px 25px 0px 0px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+} 
+.navMenuItem a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;    
+    
+}
+.navMenu{
+    padding: 8px 12px;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+.navMenu:hover{
+   background-color: rgb(92, 84, 162) ;
+}
+.productos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    margin: 0px 5px 0px 5px;
+    padding: 0px;
+}
+h2{
+    display: flex;
+    justify-content: center;
+    border: 5px solid black;
+    margin: 5px 280px 5px 280px;
+    flex-wrap: wrap;
+}  
+.imgMoto{
+    display: flex;
+    line-height: 0px;
+    border: 5px solid black;
+    margin: 0px 0px 0px 0px;
+}
+.indumentaria{
+    display: flex;
+    line-height: 0px;
+    border: 5px solid black;
+    margin: 0px 0px 0px 5px;
+
+}
+.repuestos{
+    display: flex;
+    line-height: 0px;
+    border: 5px solid black;
+    margin: 0px 0px 0px 5px;
+}
+.turnos{
+    display: flex;
+    line-height: 0px;
+    border: 5px solid black;
+    margin: 0px 0px 0px 5px;
+}
+.seguros{
+    display: flex;
+    line-height: 0px;
+    border: 5px solid black;
+    margin: 0px 0px 3px 5px;
+}
+.bicicletas{
+    display: flex;
+    line-height: 0px;
+    border: 5px solid black;
+    margin: 0px 0px 3px 5px;
+}
+footer{
+    background-color: rgb(0, 144, 187);
+    display: flex;
+    justify-content: flex-end;
+    margin:auto;
+}
+.repuestos footer{
+   
+}
+.marcas{
+    flex-wrap: wrap;
+    height: 535px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+.yamaha{
+    border: 5px solid black;
+    margin: 0px 0px 0px 0px;
+}
+.honda{
+    border: 5px solid black;
+    margin: 0px 0px 0px 0px;
+}
+.suzuki{
+    border: 5px solid black;
+    margin: 0px 0px 0px 0px;
+}
+.ktm{
+    border: 5px solid black;
+    margin: 0px 0px 0px 0px;
+}
+.bmw{
+    border: 5px solid black;
+    margin: 0px 0px 0px 0px;
+}
+.kawa{
+    border: 5px solid black;
+    margin: 5px 0px 5px 0px;
+    padding: 0px 0px 0px 0px;
+}
