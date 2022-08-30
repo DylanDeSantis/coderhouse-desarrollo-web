@@ -46,7 +46,6 @@ header{
 /*seccion index*/
 main{
     background-color: rgb(224, 224, 224)
-    
 }
 .productos{
     width: 100%;
@@ -86,7 +85,7 @@ main{
     margin: 1px 5px 1px 5px;
     border-radius: 15px;
 }
-p{
+.titulo{
     display: flex;
     flex-wrap: wrap;
     font-size: larger;
@@ -98,24 +97,95 @@ p{
     margin: 1px 300px 1px 300px;
 }
 /*pie de pagina*/
-footer{
+.pieDePagina{
     background-color: rgb(0, 144, 187);
     width: 100%;
     height: 100%;
-    
-}
-.imagenes footer{
-    display: flex; 
+    display: fleX;
     flex-wrap: wrap;
-    justify-content: space-around;
-
-
+    align-items: center;
 }
-.dylan{
+.footerLogo{
     display: flex;
-    align-items: flex-end;
-    width: 100%;
-    height: 100%;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+.footerLogoMarca{
+    font-size: larger;
+    font-weight: bolder;
+}
+.cajaSeccionesFooter{
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   flex-grow: 1;
+   justify-content: space-around;
+}
+.bloqueUno{
+    display: flex;
+    flex-wrap: wrap;
+}
+.bloqueDos{
+    display: flex;
+    flex-wrap: wrap;
+}
+.listaUno li{
+    list-style-type: none;
+    font-size: large;
+    font-style: inherit;
+    font-weight: bolder;
+    padding: 15px 0px 15px 0px;
+}
+.listaDos li{
+    list-style-type: none;
+    padding: 15px 0px 15px 0px;
+    font-size: large;
+    font-style: inherit;
+    font-weight: bolder;
+}
+.elementosFooter{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+.footerLogoMarca{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.footerLogoPago{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.footerLogoSociales{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.footerMenu{
+    text-decoration: none;
+    color: rgb(0, 0, 0); 
+    padding: 0px 15px 0px 15px;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+.footerMenu:hover{
+    background-color: rgb(148, 216, 255);
+}
+.footerLogoPago{
+    font-size: larger;
+    font-weight: bolder;
+}   
+.footerLogoSociales{
+    font-size: larger;
+    font-weight: bolder;
+}
+.dondeEstamos{
+    display: flex;
+    flex-wrap: wrap;
 }
 /* formulario de contacto */
 .formulario{
@@ -124,8 +194,6 @@ footer{
     width: 100%;
     display: flex;
     font-weight: bolder
-
-
 }
 .articulo{
     width: 90%;
@@ -317,23 +385,328 @@ input[type="submit"]{
 }
 /* seccion repuestos */
 .seccionRepuestos{
-    
-    
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
-.seccionRepuestos img{
-    width: 200px;
-    margin: 5px 0px 5px 0px;
-    padding: 5px 490px 5px 15px;
+.seccionRepuestos p{
+    font-size: larger;
+    font-weight: bolder;
+}
+.stockRepuestos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 50%;
     box-shadow: 0px 4px 8px 0 rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
+    margin: 15px 0px 15px 0px;
 }
-.stock{
+.cajaRepuestos{
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0px 4px 8px 0 rgb(0, 0, 0);
+    margin: 5px 5px 5px 5px;
+    width: 99%;
+}
+.fotoRepuesto img{
+    display: flex;
+    flex-wrap: wrap;
+    width: 150px;
+}
+.descripcionRepuestos{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.descripcionRepuestos p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0px 0px 5px;
+}
+.precioRepuestos{
+    margin: 15px 0px 0px 5px;
+}
+.botonRepuestos{
+    display: flex;
+    justify-content: flex-start;
     align-items: flex-end;
+    margin: 15px 0px 0px 0px;
+}
+.botonCarritoRepuestos{
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 17px;
+    margin: 0px 0px 0px 5px;
+    background-color: white;
+    color: black;
+    transition-duration: 0.4s;
+}
+.botonCarritoRepuestos:hover{
+    background-color: rgb(181, 180, 177);
+    color: rgb(0, 0, 0);
+}
+.fotoRepuestoCaballete img{
+    width: 120px;
+}
+.descripcionRepuestosCaballete p{
+    margin: 5px 0px 0px 25px;
+}
+.descripcionRepuestosCaballete h1{
+    margin: 15px 0px 0px 25px;
+}
+.descripcionRepuestosCaballete div{
+    margin: 15px 0px 0px 20px;   
+}
+.cajaRepuestosColin{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    box-shadow: 0px 4px 8px 0 rgb(0, 0, 0);
+    margin: 5px 5px 5px 5px;
+    padding: 0px 0px 10px 0px;
+}
+.fotoRepuestoColin img{
+    width: 150px;
+}
+.descripcionRepuestosColin p{
+    margin: 0px 0px 0px 5px;
+}
+.cajaRepuestosVeda{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    box-shadow: 0px 4px 8px 0 rgb(0, 0, 0);
+    margin: 5px 5px 5px 5px;
+    padding: 0px 0px 10px 0px;
+}
+.fotoRepuestoVeda img{
+    width: 150px;
+}
+.descripcionRepuestosVeda p{
+    margin: 0px 0px 0px 5px;
+}
+.cajaRepuestosService{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    box-shadow: 0px 4px 8px 0 rgb(0, 0, 0);
+    margin: 5px 5px 5px 5px;
+    padding: 0px 0px 10px 0px;
+}
+.cajaRepuestosManijas{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    box-shadow: 0px 4px 8px 0 rgb(0, 0, 0);
+    margin: 5px 5px 5px 5px;
+    padding: 0px 0px 10px 0px;
+}
+.fotoRepuestoManijas img{
+    width: 120px;
+}
+.descripcionRepuestosManijas p{
+    margin: 5px 0px 0px 35px;
+}
+.descripcionRepuestosManijas h1{
+    margin: 15px 0px 0px 35px;
+}
+.descripcionRepuestosManijas div{
+    margin: 15px 0px 0px 30px;
+}
+.cajaRepuestosManubrio{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    box-shadow: 0px 4px 8px 0 rgb(0, 0, 0);
+    margin: 5px 5px 5px 5px;
+    padding: 0px 0px 10px 0px;
+}
+.carritoYPagoRepuestos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(224, 224, 224);
+    color: black;
+    font-size: 16px;
+    border: 2px solid black;
+    transition-duration: 0.4s;
+    box-shadow: 0px 4px 8px 0 rgb(0, 0, 0);
+    padding: 0px 15px 0px 15px;
+}
+.carritoYPagoRepuestos img{
+    width: 20%;
+}
+.botonPagoRepuestos{
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 15px;
+}
+.botonPagoRepuestos:hover{
+    background-color: rgb(161, 143, 227);
+    color: rgb(0, 0, 0);
+}
+.buscador{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px 15px 0px 0px;
+}
+.buscador input{
     margin: 5px 0px 5px 0px;
-    padding: 5px 490px 5px 15px;
-
-   
+    padding: 10px 10px 10px 10px;
+}
+.buscador button{
+    margin: 5px 0px 5px 0px;
+    padding: 10px 10px 10px 10px;
+}
+/* seccion seguros */
+.formularioSeguros{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 25px 0px 25px 0px;
+}
+.cargaDeDatos{
+    width: 100%;
+    max-width: 400px;
+    background-color: rgb(0, 144, 187);;
+    margin: auto;
+    border-radius: 1rem;
+    padding: 1.5rem 1.5rem;
+    box-shadow: 7px 13px 37px black;
+}
+.logoSeguros{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.atm img{
+    width: 20%;
+    margin: -5px 0px 0px 0px;
+}
+.triunfo img{
+    width: 35%;
+    margin: -5px 0px 0px 0px;
+}
+.orbis img{
+    width: 35%;
+    margin: -5px 0px 0px 0px;
+}
+.atm{
+    padding: 8px 0px 8px 0px;
+}
+.triunfo{
+    padding: 14px 0px 14px 0px;
+}
+.orbis{
+    padding: 2px 0px 2px 0px;
+}
+.textoContacto{
+    font-size: medium;
+    margin: 15px 0px 15px 0px;
+}
+.textSeguros{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: larger;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    border: 5px solid black;
+    border-radius: 15px;
+    flex: 1;
+    margin: 10px 0px 0px 0px;
+    background-color: rgb(192, 223, 250);
+}
+/* Seccion Bicicletas */
+.seccionBicicletas{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+.seccionBicicletas p{
+    font-size: larger;
+    font-weight: bolder;
+}
+.stockBicicletas{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 50%;
+    box-shadow: 0px 4px 8px 0 rgb(0, 0, 0);
+    margin: 15px 0px 15px 0px;
+}
+.cajaBicicletas{
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0px 4px 8px 0 rgb(0, 0, 0);
+    margin: 5px 5px 5px 5px;
+    padding: 15px 0px 15px 0px;
+    width: 99%;
+}
+.fotoBicicletas img{
+    display: flex;
+    flex-wrap: wrap;
+    width: 150px;
+}
+.descripcionBicicletas{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 50%;
+    flex-grow: 1;
+}
+.descripcionBicicletas p{
+    width: 100%;
+    display: flex;
+    flex-grow: 1;
+}
+.precioBicicletas{
+    margin: 5px 0px 10px 0px;
+}
+.botonCarritoBicicletas{
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 17px;
+    margin: 0px 0px 0px 5px;
+    background-color: white;
+    color: black;
+    transition-duration: 0.4s;
+}
+.botonCarritoBicicletas:hover{
+    background-color: rgb(181, 180, 177);
+    color: rgb(0, 0, 0);
+}
+.buscadorBicicletas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 5px 15px 0px 0px;
+}
+.buscadorBicicletas input{
+    margin: 5px 0px 5px 0px;
+    padding: 10px 10px 10px 10px;
+}
+.buscadorBicicletas button{
+    margin: 5px 0px 5px 0px;
+    padding: 10px 10px 10px 10px;
+}
+.carritoYPagoBicicletas{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(224, 224, 224);
+    color: black;
+    font-size: 16px;
+    border: 2px solid black;
+    transition-duration: 0.4s;
+    box-shadow: 0px 4px 8px 0 rgb(0, 0, 0);
+    padding: 0px 15px 0px 15px;
 }
