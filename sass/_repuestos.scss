@@ -1,0 +1,179 @@
+/* seccion repuestos */
+.seccionRepuestos{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.seccionRepuestos p{
+    font-size: larger;
+    font-weight: bolder;
+}
+.stockRepuestos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 50%;
+    box-shadow: 0px 4px 8px 0 rgb(0, 0, 0);
+    margin: 15px 0px 15px 0px;
+}
+.cajaRepuestos{
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0px 4px 8px 0 rgb(0, 0, 0);
+    margin: 5px 5px 5px 5px;
+    width: 99%;
+}
+.fotoRepuesto img{
+    display: flex;
+    flex-wrap: wrap;
+    width: 150px;
+}
+.descripcionRepuestos{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.descripcionRepuestos p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0px 0px 5px;
+}
+.precioRepuestos{
+    margin: 15px 0px 0px 5px;
+}
+.botonRepuestos{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin: 15px 0px 0px 0px;
+}
+.botonCarritoRepuestos{
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 17px;
+    margin: 0px 0px 0px 5px;
+    background-color: white;
+    color: black;
+    transition-duration: 0.4s;
+}
+.botonCarritoRepuestos:hover{
+    background-color: rgb(181, 180, 177);
+    color: rgb(0, 0, 0);
+}
+.fotoRepuestoCaballete img{
+    width: 120px;
+}
+.descripcionRepuestosCaballete p{
+    margin: 5px 0px 0px 25px;
+}
+.descripcionRepuestosCaballete h1{
+    margin: 15px 0px 0px 25px;
+}
+.descripcionRepuestosCaballete div{
+    margin: 15px 0px 0px 20px;   
+}
+.cajaRepuestosColin{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    box-shadow: 0px 4px 8px 0 rgb(0, 0, 0);
+    margin: 5px 5px 5px 5px;
+    padding: 0px 0px 10px 0px;
+}
+.fotoRepuestoColin img{
+    width: 150px;
+}
+.descripcionRepuestosColin p{
+    margin: 0px 0px 0px 5px;
+}
+.cajaRepuestosVeda{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    box-shadow: 0px 4px 8px 0 rgb(0, 0, 0);
+    margin: 5px 5px 5px 5px;
+    padding: 0px 0px 10px 0px;
+}
+.fotoRepuestoVeda img{
+    width: 150px;
+}
+.descripcionRepuestosVeda p{
+    margin: 0px 0px 0px 5px;
+}
+.cajaRepuestosService{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    box-shadow: 0px 4px 8px 0 rgb(0, 0, 0);
+    margin: 5px 5px 5px 5px;
+    padding: 0px 0px 10px 0px;
+}
+.cajaRepuestosManijas{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    box-shadow: 0px 4px 8px 0 rgb(0, 0, 0);
+    margin: 5px 5px 5px 5px;
+    padding: 0px 0px 10px 0px;
+}
+.fotoRepuestoManijas img{
+    width: 120px;
+}
+.descripcionRepuestosManijas p{
+    margin: 5px 0px 0px 35px;
+}
+.descripcionRepuestosManijas h1{
+    margin: 15px 0px 0px 35px;
+}
+.descripcionRepuestosManijas div{
+    margin: 15px 0px 0px 30px;
+}
+.cajaRepuestosManubrio{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    box-shadow: 0px 4px 8px 0 rgb(0, 0, 0);
+    margin: 5px 5px 5px 5px;
+    padding: 0px 0px 10px 0px;
+}
+.carritoYPagoRepuestos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(224, 224, 224);
+    color: black;
+    font-size: 16px;
+    border: 2px solid black;
+    transition-duration: 0.4s;
+    box-shadow: 0px 4px 8px 0 rgb(0, 0, 0);
+    padding: 0px 15px 0px 15px;
+}
+.carritoYPagoRepuestos img{
+    width: 20%;
+}
+.botonPagoRepuestos{
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 15px;
+}
+.botonPagoRepuestos:hover{
+    background-color: rgb(161, 143, 227);
+    color: rgb(0, 0, 0);
+}
+.buscador{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px 15px 0px 0px;
+}
+.buscador input{
+    margin: 5px 0px 5px 0px;
+    padding: 10px 10px 10px 10px;
+}
+.buscador button{
+    margin: 5px 0px 5px 0px;
+    padding: 10px 10px 10px 10px;
+}

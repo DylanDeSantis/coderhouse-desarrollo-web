@@ -1,0 +1,94 @@
+/* Seccion Bicicletas */
+.seccionBicicletas{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+.seccionBicicletas p{
+    font-size: larger;
+    font-weight: bolder;
+}
+.bicicletas{
+    border: 5px solid black;
+    margin: 1px 5px 1px 5px;
+    border-radius: 15px;
+}
+.stockBicicletas{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 50%;
+    box-shadow: 0px 4px 8px 0 rgb(0, 0, 0);
+    margin: 15px 0px 15px 0px;
+}
+.cajaBicicletas{
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0px 4px 8px 0 rgb(0, 0, 0);
+    margin: 5px 5px 5px 5px;
+    padding: 15px 0px 15px 0px;
+    width: 99%;
+}
+.fotoBicicletas img{
+    display: flex;
+    flex-wrap: wrap;
+    width: 150px;
+}
+.descripcionBicicletas{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 50%;
+    flex-grow: 1;
+}
+.descripcionBicicletas p{
+    width: 100%;
+    display: flex;
+    flex-grow: 1;
+}
+.precioBicicletas{
+    margin: 5px 0px 10px 0px;
+}
+.botonCarritoBicicletas{
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 17px;
+    margin: 0px 0px 0px 5px;
+    background-color: white;
+    color: black;
+    transition-duration: 0.4s;
+}
+.botonCarritoBicicletas:hover{
+    background-color: rgb(181, 180, 177);
+    color: rgb(0, 0, 0);
+}
+.buscadorBicicletas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 5px 15px 0px 0px;
+}
+.buscadorBicicletas input{
+    margin: 5px 0px 5px 0px;
+    padding: 10px 10px 10px 10px;
+}
+.buscadorBicicletas button{
+    margin: 5px 0px 5px 0px;
+    padding: 10px 10px 10px 10px;
+}
+.carritoYPagoBicicletas{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(224, 224, 224);
+    color: black;
+    font-size: 16px;
+    border: 2px solid black;
+    transition-duration: 0.4s;
+    box-shadow: 0px 4px 8px 0 rgb(0, 0, 0);
+    padding: 0px 15px 0px 15px;
+}

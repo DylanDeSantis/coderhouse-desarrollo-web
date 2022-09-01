@@ -50,47 +50,17 @@ header {
   background-color: gainsboro;
 }
 
-/*seccion index*/
-main {
-  background-color: rgb(224, 224, 224);
-}
-
-.productos {
-  width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: 50% 50%;
-}
-
-.imgMoto {
+/* Seccion Bicicletas */
+.seccionBicicletas {
   display: flex;
-  border: 5px solid black;
-  border-radius: 15px;
-  margin: 1px 5px 1px 5px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 }
 
-.indumentaria {
-  border: 5px solid black;
-  border-radius: 15px;
-  margin: 1px 5px 1px 5px;
-}
-
-.repuestos {
-  border: 5px solid black;
-  border-radius: 15px;
-  margin: 1px 5px 1px 5px;
-}
-
-.turnos {
-  border: 5px solid black;
-  border-radius: 15px;
-  margin: 1px 5px 1px 5px;
-}
-
-.seguros {
-  border: 5px solid black;
-  border-radius: 15px;
-  margin: 1px 5px 1px 5px;
+.seccionBicicletas p {
+  font-size: larger;
+  font-weight: bolder;
 }
 
 .bicicletas {
@@ -99,124 +69,94 @@ main {
   border-radius: 15px;
 }
 
-.titulo {
-  display: flex;
-  flex-wrap: wrap;
-  font-size: larger;
-  text-align: center;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-weight: bolder;
-  border: 5px solid black;
-  border-radius: 15px;
-  margin: 1px 300px 1px 300px;
-}
-
-/*pie de pagina*/
-.pieDePagina {
-  background-color: rgb(0, 144, 187);
-  width: 100%;
-  height: 100%;
-  display: fleX;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.footerLogo {
-  display: flex;
-  flex-wrap: wrap;
-  flex-grow: 1;
-}
-
-.footerLogoMarca {
-  font-size: larger;
-  font-weight: bolder;
-}
-
-.cajaSeccionesFooter {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  flex-grow: 1;
-  justify-content: space-around;
-}
-
-.bloqueUno {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.bloqueDos {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.listaUno li {
-  list-style-type: none;
-  font-size: large;
-  font-style: inherit;
-  font-weight: bolder;
-  padding: 15px 0px 15px 0px;
-}
-
-.listaDos li {
-  list-style-type: none;
-  padding: 15px 0px 15px 0px;
-  font-size: large;
-  font-style: inherit;
-  font-weight: bolder;
-}
-
-.elementosFooter {
+.stockBicicletas {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  align-items: center;
+  width: 50%;
+  box-shadow: 0px 4px 8px 0 rgb(0, 0, 0);
+  margin: 15px 0px 15px 0px;
+}
+
+.cajaBicicletas {
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0px 4px 8px 0 rgb(0, 0, 0);
+  margin: 5px 5px 5px 5px;
+  padding: 15px 0px 15px 0px;
+  width: 99%;
+}
+
+.fotoBicicletas img {
+  display: flex;
+  flex-wrap: wrap;
+  width: 150px;
+}
+
+.descripcionBicicletas {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 50%;
   flex-grow: 1;
 }
 
-.footerLogoMarca {
+.descripcionBicicletas p {
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-grow: 1;
 }
 
-.footerLogoPago {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.precioBicicletas {
+  margin: 5px 0px 10px 0px;
 }
 
-.footerLogoSociales {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.botonCarritoBicicletas {
+  border: 2px solid black;
+  border-radius: 8px;
+  font-size: 17px;
+  margin: 0px 0px 0px 5px;
+  background-color: white;
+  color: black;
+  transition-duration: 0.4s;
 }
 
-.footerMenu {
-  text-decoration: none;
+.botonCarritoBicicletas:hover {
+  background-color: rgb(181, 180, 177);
   color: rgb(0, 0, 0);
-  padding: 0px 15px 0px 15px;
-  border-radius: 15px;
-  transition: 0.5s;
 }
 
-.footerMenu:hover {
-  background-color: rgb(148, 216, 255);
-}
-
-.footerLogoPago {
-  font-size: larger;
-  font-weight: bolder;
-}
-
-.footerLogoSociales {
-  font-size: larger;
-  font-weight: bolder;
-}
-
-.dondeEstamos {
+.buscadorBicicletas {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 5px 15px 0px 0px;
+}
+
+.buscadorBicicletas input {
+  margin: 5px 0px 5px 0px;
+  padding: 10px 10px 10px 10px;
+}
+
+.buscadorBicicletas button {
+  margin: 5px 0px 5px 0px;
+  padding: 10px 10px 10px 10px;
+}
+
+.carritoYPagoBicicletas {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgb(224, 224, 224);
+  color: black;
+  font-size: 16px;
+  border: 2px solid black;
+  transition-duration: 0.4s;
+  box-shadow: 0px 4px 8px 0 rgb(0, 0, 0);
+  padding: 0px 15px 0px 15px;
 }
 
 /* formulario de contacto */
@@ -300,7 +240,7 @@ input[type=submit] {
 .seccionIndumentaria {
   background-color: rgb(224, 224, 224);
   width: 100%;
-  height: 510vh;
+  height: 350vh;
 }
 
 .carritoYPago {
@@ -347,6 +287,10 @@ input[type=submit] {
 }
 
 .catalogo {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-grow: 5;
   margin: 15px 15px 15px 15px;
   padding: 5px 15px 5px 15px;
   position: relative;
@@ -394,15 +338,11 @@ input[type=submit] {
   width: 210px;
 }
 
-.tituloCampera {
-  display: flex;
-}
-
 .contenidoIndumentaria h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  flex-direction: row;
+  margin: 15px 0px 10px 0px;
 }
 
 .catalogoCamperas {
@@ -425,12 +365,18 @@ input[type=submit] {
   background-color: rgb(255, 255, 255);
 }
 
+.catalogo {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
 .catalogoPantalones {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin: 15px 150px 15px 150px;
-  padding: 5px 15px 5px 15px;
+  justify-content: center;
+  width: 90%;
   box-shadow: 0px 4px 8px 0 rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
 }
@@ -443,6 +389,71 @@ input[type=submit] {
   padding: 5px 15px 5px 15px;
   box-shadow: 0px 4px 8px 0 rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
+}
+
+/* SECCION MOTOS */
+.seccionMotos {
+  height: 100rem;
+}
+
+.cajaHonda {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  border: 4px solid black;
+  box-shadow: 0px 1px 1px 0 rgb(0, 0, 0);
+  height: 100rem;
+  margin: 0px 5px 0px 5px;
+}
+
+.contenedorUnidadesVenta {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  margin: 5px 5px 0px 5px;
+  width: 20%;
+  height: 30%;
+}
+
+.contenidoPublicacion {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 30%;
+  color: black;
+  border: 4px solid black;
+  margin: 0px 0px 5px 0px;
+}
+
+.fotoUnidades {
+  display: flex;
+  flex-wrap: wrap;
+  color: black;
+  border: 4px solid black;
+}
+
+.fotoUnidades img {
+  width: 100%;
+  height: 100%;
+}
+
+.fotoUnidadesFalcon {
+  width: 90%;
+  height: 87%;
+  color: black;
+  border: 4px solid black;
+}
+
+.contenidoPublicacionFalcon {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 30%;
+  color: black;
+  border: 4px solid black;
+  margin: 0px 0px 5px 0px;
 }
 
 /* seccion repuestos */
@@ -728,106 +739,171 @@ input[type=submit] {
   background-color: rgb(192, 223, 250);
 }
 
-/* Seccion Bicicletas */
-.seccionBicicletas {
+/*seccion index*/
+main {
+  background-color: rgb(224, 224, 224);
+}
+
+.productos {
   width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.imgMoto {
+  display: flex;
+  border: 5px solid black;
+  border-radius: 15px;
+  margin: 1px 5px 1px 5px;
+}
+
+.indumentaria {
+  border: 5px solid black;
+  border-radius: 15px;
+  margin: 1px 5px 1px 5px;
+}
+
+.repuestos {
+  border: 5px solid black;
+  border-radius: 15px;
+  margin: 1px 5px 1px 5px;
+}
+
+.turnos {
+  border: 5px solid black;
+  border-radius: 15px;
+  margin: 1px 5px 1px 5px;
+}
+
+.seguros {
+  border: 5px solid black;
+  border-radius: 15px;
+  margin: 1px 5px 1px 5px;
+}
+
+.bicicletas {
+  border: 5px solid black;
+  margin: 1px 5px 1px 5px;
+  border-radius: 15px;
+}
+
+.titulo {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  font-size: larger;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  border: 5px solid black;
+  border-radius: 15px;
+  margin: 1px 300px 1px 300px;
+}
+
+/*pie de pagina*/
+.pieDePagina {
+  background-color: rgb(0, 144, 187);
+  width: 100%;
+  height: 100%;
+  display: fleX;
+  flex-wrap: wrap;
   align-items: center;
 }
 
-.seccionBicicletas p {
+.footerLogo {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+.footerLogoMarca {
   font-size: larger;
   font-weight: bolder;
 }
 
-.stockBicicletas {
+.cajaSeccionesFooter {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
-  width: 50%;
-  box-shadow: 0px 4px 8px 0 rgb(0, 0, 0);
-  margin: 15px 0px 15px 0px;
-}
-
-.cajaBicicletas {
-  display: flex;
-  flex-wrap: wrap;
-  box-shadow: 0px 4px 8px 0 rgb(0, 0, 0);
-  margin: 5px 5px 5px 5px;
-  padding: 15px 0px 15px 0px;
-  width: 99%;
-}
-
-.fotoBicicletas img {
-  display: flex;
-  flex-wrap: wrap;
-  width: 150px;
-}
-
-.descripcionBicicletas {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  width: 50%;
-  flex-grow: 1;
-}
-
-.descripcionBicicletas p {
-  width: 100%;
-  display: flex;
-  flex-grow: 1;
-}
-
-.precioBicicletas {
-  margin: 5px 0px 10px 0px;
-}
-
-.botonCarritoBicicletas {
-  border: 2px solid black;
-  border-radius: 8px;
-  font-size: 17px;
-  margin: 0px 0px 0px 5px;
-  background-color: white;
-  color: black;
-  transition-duration: 0.4s;
-}
-
-.botonCarritoBicicletas:hover {
-  background-color: rgb(181, 180, 177);
-  color: rgb(0, 0, 0);
-}
-
-.buscadorBicicletas {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin: 5px 15px 0px 0px;
-}
-
-.buscadorBicicletas input {
-  margin: 5px 0px 5px 0px;
-  padding: 10px 10px 10px 10px;
-}
-
-.buscadorBicicletas button {
-  margin: 5px 0px 5px 0px;
-  padding: 10px 10px 10px 10px;
-}
-
-.carritoYPagoBicicletas {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
-  background-color: rgb(224, 224, 224);
-  color: black;
-  font-size: 16px;
-  border: 2px solid black;
-  transition-duration: 0.4s;
-  box-shadow: 0px 4px 8px 0 rgb(0, 0, 0);
+  flex-grow: 1;
+  justify-content: space-around;
+}
+
+.bloqueUno {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bloqueDos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.listaUno li {
+  list-style-type: none;
+  font-size: large;
+  font-style: inherit;
+  font-weight: bolder;
+  padding: 15px 0px 15px 0px;
+}
+
+.listaDos li {
+  list-style-type: none;
+  padding: 15px 0px 15px 0px;
+  font-size: large;
+  font-style: inherit;
+  font-weight: bolder;
+}
+
+.elementosFooter {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.footerLogoMarca {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footerLogoPago {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footerLogoSociales {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footerMenu {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
   padding: 0px 15px 0px 15px;
+  border-radius: 15px;
+  transition: 0.5s;
+}
+
+.footerMenu:hover {
+  background-color: rgb(148, 216, 255);
+}
+
+.footerLogoPago {
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.footerLogoSociales {
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.dondeEstamos {
+  display: flex;
+  flex-wrap: wrap;
 }/*# sourceMappingURL=style.css.map */
