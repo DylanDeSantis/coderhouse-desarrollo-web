@@ -1,136 +1,94 @@
 /*Seccion indumentaria*/
 .seccionIndumentaria{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     background-color: rgb(224, 224, 224);
     width: 100%;
-    height: 350vh;
+    .carritoYPago {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: rgb(224, 224, 224);
+        color: black;
+        font-size: 16px;
+        border: 2px solid black;
+        transition-duration: 0.4s;
+        box-shadow: 0px 4px 8px 0 rgb(0, 0, 0);
+        padding: 0px 15px 0px 15px;
+    }
+    .titulo h1{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 15px 0px 0px 0px;
+        font-size: 35px;
+        background: linear-gradient(#1497be, #1c2aec);
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        animation: text 5s linear infinite;
+    }
+    @keyframes text{
+        0%{
+            filter: hue-rotate(0deg);
+        }
+        100%{
+            filter: hue-rotate(360deg);
+        }
+    }
+    .contenidoIndumentaria{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .catalogoCamperas{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr 1fr);
+        margin: 15px 15px 15px 15px;
+        padding: 5px 15px 5px 15px;
+        box-shadow: 0px 4px 8px 0 rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+    }
+    .catalogo{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 5px 5px 5px 5px;
+        padding: 5px 0px 5px 0px;
+        box-shadow: 0px 4px 8px 0 rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+        .descripcion{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .descripcion p{
+            font-size: larger;
+            font-weight: bolder;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .boton{
+            border: 2px solid black;
+            border-radius: 5px;
+            font-size: 20px;
+            font-weight: bolder;
+            padding: 2px 2px 2px 2px;
+        }
+        .boton:hover{
+            background-color: rgb(29, 130, 198);
+            color: rgb(0, 0, 0);
+        }
+    }
 }
-.carritoYPago {
-    background-color: rgb(224, 224, 224);
-    color: black;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    text-align: center;
-    font-size: 16px;
-    padding: 5px 10px;
-    border: 2px solid black;
-    border-radius: 50px;
-    margin: 0px 0px 10px 10px;
-    transition-duration: 0.4s;
-    box-shadow: 0px 4px 8px 0 rgb(0, 0, 0);
-    width: 7%;
-}
-.tienda h1{
-    margin: 0px 0px 25px 0px;
-    display: flex;
-    justify-content: center;
-}
-.carrito{
-    margin: 0px 0px 5px 0px;
-}
-.botonPago{
-    background-color: white;
-    color: black;
-    border: 2px solid blue;
-    border-radius: 20px;
-    transition-duration: 0.4s;
-    margin: 5px 0px 5px 5px;
-    font-size: large;
-    padding: 0px 10px 0px 10px;
-    
-}
-.botonPago:hover{
-    background-color: rgb(54, 0, 250);
-    color: rgb(2, 0, 0)
-}
-.catalogo{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    flex-grow: 5;
-    margin: 15px 15px 15px 15px;
-    padding: 5px 15px 5px 15px;
-    position: relative;
-    box-shadow: 0px 4px 8px 0 rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
-}
-.catalogo:hover{
-    box-shadow: 0px 8px 16px 0px rgb(0, 0, 0);
-}
-.precio{
-    margin: 0px 0px 30px 0px;
-}
-.boton{
-    border: 2px solid black;
-    border-radius: 8px;
-    font-size: 16px;
-    text-align: center;
-    padding: 5px 15px;
-    background-color: white;
-    color: black;
-    transition-duration: 0.4s;
-    position: absolute;
-    right: 12px;
-    bottom: 5px;
-}
-.boton:hover{
-    background-color: blanchedalmond;
-    color: white;
-}
+
 .catalogo img{
-    width: 250px;
-    padding: 2px 0px 0px 0px ;
-}
-.catalogo .campRedBull{
-    width: 210px;
-}
-.catalogo .pantFerrari{
-    width: 210px;
-}
-.contenidoIndumentaria h2{
-    display: flex;
-    flex-wrap: wrap;    
-    justify-content: center;
-    margin: 15px 0px 10px 0px;
-}
-.catalogoCamperas{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: 15px 15px 15px 15px;
-    padding: 5px 15px 5px 15px;
-    box-shadow: 0px 4px 8px 0 rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
-}
-.catalogoRemeras{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: 15px 55px 15px 55px;
-    padding: 5px 15px 5px 15px;
-    box-shadow: 0px 4px 8px 0 rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
-}
-.catalogo{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    flex-grow: 1;
-}
-.catalogoPantalones{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 90%;
-    box-shadow: 0px 4px 8px 0 rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
-}
-.catalogoGorras{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: 15px 150px 15px 150px;
-    padding: 5px 15px 5px 15px;
-    box-shadow: 0px 4px 8px 0 rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 270px;
 }
