@@ -6,86 +6,83 @@
     display: fleX;
     flex-wrap: wrap;
     align-items: center;
-}
-.footerLogo{
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
-}
-.footerLogoMarca{
-    font-size: larger;
-    font-weight: bolder;
-}
-.cajaSeccionesFooter{
-   display: flex;
-   flex-wrap: wrap;
-   align-items: center;
-   flex-grow: 1;
-   justify-content: space-around;
-}
-.bloqueUno{
-    display: flex;
-    flex-wrap: wrap;
-}
-.bloqueDos{
-    display: flex;
-    flex-wrap: wrap;
-}
-.listaUno li{
-    list-style-type: none;
-    font-size: large;
-    font-style: inherit;
-    font-weight: bolder;
-    padding: 15px 0px 15px 0px;
-}
-.listaDos li{
-    list-style-type: none;
-    padding: 15px 0px 15px 0px;
-    font-size: large;
-    font-style: inherit;
-    font-weight: bolder;
-}
-.elementosFooter{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    flex-grow: 1;
-}
-.footerLogoMarca{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.footerLogoPago{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.footerLogoSociales{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.footerMenu{
-    text-decoration: none;
-    color: rgb(0, 0, 0); 
-    padding: 0px 15px 0px 15px;
-    border-radius: 15px;
-    transition: 0.5s;
-}
-.footerMenu:hover{
-    background-color: rgb(148, 216, 255);
-}
-.footerLogoPago{
-    font-size: larger;
-    font-weight: bolder;
-}   
-.footerLogoSociales{
-    font-size: larger;
-    font-weight: bolder;
-}
-.dondeEstamos{
-    display: flex;
-    flex-wrap: wrap;
+    .footerLogo{
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
+    }
+    .cajaSeccionesFooter{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        flex-direction: column;
+        flex-grow: 1;
+        justify-content: space-around;
+        .bloqueUno{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            .listaUno li{
+                list-style-type: none;
+                font-size: large;
+                font-style: inherit;
+                font-weight: bolder;
+                padding: 15px 0px 15px 0px;
+            }
+        }
+        .bloqueDos{
+            display: flex;
+            flex-wrap: wrap; 
+            flex-direction: column;
+            .listaDos li{
+                list-style-type: none;
+                padding: 15px 0px 15px 0px;
+                font-size: large;
+                font-style: inherit;
+                font-weight: bolder;
+            }
+        }
+        .footerMenu{
+            text-decoration: none;
+            color: rgb(0, 0, 0); 
+            padding: 0px 15px 0px 15px;
+            border-radius: 15px;
+            transition: 0.5s;
+        }
+        .footerMenu:hover{
+            background-color: rgb(148, 216, 255);
+        }
+    }
+    .elementosFooter{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        flex-grow: 1;
+        .footerLogoMarca{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            font-size: larger;
+            font-weight: bolder;
+        }
+        .footerLogoPago{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            font-size: larger;
+            font-weight: bolder;
+        }
+        .footerLogoSociales{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            font-size: larger;
+            font-weight: bolder;
+        }
+    } 
+    .dondeEstamos{
+        display: flex;
+        flex-wrap: wrap;
+    }
 }

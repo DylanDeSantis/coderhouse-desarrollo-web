@@ -5,52 +5,121 @@
 }
 
 header {
-  width: auto;
   background-color: rgb(0, 144, 187);
 }
 
-.bNav {
+body {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.logo {
-  width: 15%;
-  height: 100%;
-}
-
-.menu {
-  width: 85%;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
   flex-wrap: wrap;
+}
+
+section {
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  height: auto;
+}
+
+.bNav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+}
+.bNav .logo {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+.bNav .menu {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
   list-style-type: none;
-  margin: 0px 50px 0px 50px;
+  margin: 0px 50px 10px 50px;
   padding: 0px 0px 0px 0px;
 }
-
-.navMenuItem a {
+.bNav .menu .navMenuItem a {
   text-decoration: none;
   font-size: large;
   font-style: inherit;
   font-weight: bolder;
   color: rgb(0, 0, 0);
 }
-
-.navMenu {
+.bNav .menu .navMenu {
   padding: 0px 15px 0px 15px;
   border-radius: 15px;
   transition: 0.5s;
 }
-
-.navMenu:hover {
+.bNav .menu .navMenu:hover {
   background-color: gainsboro;
 }
 
+.menuIcon {
+  display: none;
+}
+
+.menuIcon, #check {
+  display: none;
+}
+
+@media (max-width: 879px) {
+  .menuIcon {
+    display: block;
+    position: fixed;
+    top: 15px;
+    right: 45px;
+    width: 10px;
+  }
+  .bNav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+  }
+  .bNav .logo {
+    width: 150px;
+  }
+  .bNav .menu {
+    display: block;
+    position: fixed;
+    top: 65px;
+    left: -200%;
+    background-color: rgb(0, 144, 187);
+    width: 50%;
+    height: 60vh;
+    right: 245;
+    opacity: 1;
+    border: 2px solid black;
+  }
+  .bNav .navMenuItem {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+  .bNav .navMenuItem a {
+    text-decoration: none;
+    font-size: large;
+    font-style: inherit;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    height: 0;
+  }
+  #check:checked ~ ul {
+    left: auto;
+  }
+}
 /* Seccion Bicicletas */
 .seccionBicicletas {
   display: flex;
@@ -237,108 +306,90 @@ input[type=submit] {
   font-weight: bolder;
 }
 
-/*Seccion indumentaria*/
-.seccionIndumentaria {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  background-color: rgb(224, 224, 224);
-  width: 100%;
+.contenidoIndumentaria {
+  margin: 0px 0px 10px 0px;
 }
-.seccionIndumentaria .carritoYPago {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  background-color: rgb(224, 224, 224);
-  color: black;
-  font-size: 16px;
-  border: 2px solid black;
-  transition-duration: 0.4s;
-  box-shadow: 0px 4px 8px 0 rgb(0, 0, 0);
-  padding: 0px 15px 0px 15px;
-}
-.seccionIndumentaria .titulo h1 {
+.contenidoIndumentaria .titulo {
+  margin: 10px 0px 10px 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 15px 0px 0px 0px;
-  font-size: 35px;
-  background: linear-gradient(#1497be, #1c2aec);
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-animation: text 5s linear infinite;
-          animation: text 5s linear infinite;
 }
-@-webkit-keyframes text {
-  0% {
-    filter: hue-rotate(0deg);
-  }
-  100% {
-    filter: hue-rotate(360deg);
-  }
-}
-@keyframes text {
-  0% {
-    filter: hue-rotate(0deg);
-  }
-  100% {
-    filter: hue-rotate(360deg);
-  }
-}
-.seccionIndumentaria .contenidoIndumentaria {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-.seccionIndumentaria .catalogoCamperas {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr 1fr);
-  margin: 15px 15px 15px 15px;
-  padding: 5px 15px 5px 15px;
-  box-shadow: 0px 4px 8px 0 rgb(0, 0, 0);
-  background-color: rgb(255, 255, 255);
-}
-.seccionIndumentaria .catalogo {
+.contenidoIndumentaria .catalogoCamperas {
+  border: solid black;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 5px 5px 5px 5px;
+  justify-content: space-evenly;
+  align-content: center;
+  margin: 5px 5px 0px 5px;
   padding: 5px 0px 5px 0px;
-  box-shadow: 0px 4px 8px 0 rgb(0, 0, 0);
-  background-color: rgb(255, 255, 255);
 }
-.seccionIndumentaria .catalogo .descripcion {
+.contenidoIndumentaria .catalogoRemeras {
+  border: solid black;
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
-  align-items: center;
+  justify-content: space-evenly;
+  align-content: center;
+  margin: 5px 5px 0px 5px;
+  padding: 5px 0px 5px 0px;
 }
-.seccionIndumentaria .catalogo .descripcion p {
+.contenidoIndumentaria .catalogoPantalones {
+  border: solid black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  margin: 5px 5px 0px 5px;
+  padding: 5px 0px 5px 0px;
+}
+.contenidoIndumentaria .catalogoGorras {
+  border: solid black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  margin: 5px 5px 0px 5px;
+  padding: 5px 0px 5px 0px;
+}
+.contenidoIndumentaria .catalogo {
+  display: flex;
+  flex-wrap: wrap;
+  border: solid black;
+  flex-direction: column;
+  background-color: white;
+  margin: 10px 5px 10px 5px;
+  padding: 5px 5px 5px 5px;
+}
+.contenidoIndumentaria .catalogo p {
+  display: flex;
+  justify-content: center;
+  align-content: center;
   font-size: larger;
   font-weight: bolder;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 5px 0px 0px 0px;
+  padding: 5px 5px 10px 5px;
 }
-.seccionIndumentaria .catalogo .boton {
+.contenidoIndumentaria .catalogo:hover {
+  box-shadow: 0px 4px 8px 0 rgb(0, 0, 0);
+}
+.contenidoIndumentaria .boton {
   border: 2px solid black;
-  border-radius: 5px;
-  font-size: 20px;
-  font-weight: bolder;
-  padding: 2px 2px 2px 2px;
+  border-radius: 8px;
+  font-size: 15px;
+  margin: 0px 0px 0px 5px;
+  padding: 5px 5px;
+  background-color: white;
+  color: black;
+  transition-duration: 0.4s;
 }
-.seccionIndumentaria .catalogo .boton:hover {
-  background-color: rgb(29, 130, 198);
+.contenidoIndumentaria .boton:hover {
+  background-color: rgb(181, 180, 177);
   color: rgb(0, 0, 0);
 }
 
 .catalogo img {
-  width: 100%;
-  height: 270px;
+  width: 200px;
+  height: 250px;
 }
 
 /* SECCION MOTOS */
@@ -370,6 +421,15 @@ input[type=submit] {
   -moz-background-clip: text;
   -webkit-animation: text 5s linear infinite;
           animation: text 5s linear infinite;
+}
+
+@-webkit-keyframes text {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
 }
 
 @keyframes text {
@@ -625,53 +685,213 @@ input[type=submit] {
   background-color: rgb(192, 223, 250);
 }
 
-/*seccion index*/
-main {
-  background-color: rgb(224, 224, 224);
+.slider {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+.slider ul.sliders {
+  position: relative;
+  width: 100%;
+  height: 700px;
+}
+.slider ul.sliders li {
+  position: absolute;
+  opacity: 0;
+  width: inherit;
+  height: inherit;
+  transition: opacity 0.5s;
+}
+.slider ul.sliders li:first-child {
+  opacity: 1;
+}
+.slider .sliders {
+  display: flex;
+  flex-wrap: wrap;
+}
+.slider .sliders .sliders li {
+  width: 100%;
+  list-style: none;
+}
+.slider .sliders .sliders img {
+  width: 100%;
+  position: relative;
+}
+.slider .sliders .seccionTitulosInfo {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  font-size: larger;
+  font-weight: bolder;
+  color: white;
+  align-content: center;
+  justify-content: center;
+}
+.slider .sliders .seccionTitulosInfo h1 {
+  display: flex;
+  justify-content: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-.productos {
+/* menu del carrousel */
+.vistInfor {
+  margin: auto;
+  width: 100%;
+  padding: 30px;
+}
+.vistInfor .menuCarrousel {
+  text-align: center;
+  margin: 20px;
+}
+.vistInfor .menuCarrousel li {
+  display: inline-block;
+  text-align: center;
+}
+.vistInfor .menuCarrousel li a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  background-color: gray;
+  padding: 10px;
+  margin: 0px 5px 0px 5px;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  border-radius: 100%;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+ul.sliders {
+  position: relative;
+  width: 100%;
+  height: 700px;
+}
+
+ul.sliders li {
+  position: absolute;
+  opacity: 0;
+  width: inherit;
+  height: inherit;
+  transition: opacity 0.5s;
+}
+
+ul.sliders li:first-child {
+  opacity: 1;
+}
+
+li img {
   width: 100%;
   height: 100%;
-  display: grid;
-  grid-template-columns: 50% 50%;
 }
 
-.imgMoto {
+ul.sliders li:target {
+  opacity: 1;
+}
+
+/* informacion de productos */
+.indexInformacion {
   display: flex;
-  border: 5px solid black;
-  border-radius: 15px;
-  margin: 1px 5px 1px 5px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-
-.indumentaria {
-  border: 5px solid black;
-  border-radius: 15px;
-  margin: 1px 5px 1px 5px;
+.indexInformacion .indexDescripcionInformacion {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  margin: 10px 0px 0px;
 }
-
-.repuestos {
-  border: 5px solid black;
-  border-radius: 15px;
-  margin: 1px 5px 1px 5px;
+.indexInformacion .indexDescripcionInformacion h1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: cursive;
 }
-
-.turnos {
-  border: 5px solid black;
-  border-radius: 15px;
-  margin: 1px 5px 1px 5px;
+.indexInformacion .indexDescripcionInformacion p {
+  font-size: larger;
+  font-weight: bolder;
+  font-family: cursive;
+  margin: 25px 0px 0px;
 }
-
-.seguros {
-  border: 5px solid black;
-  border-radius: 15px;
-  margin: 1px 5px 1px 5px;
+.indexInformacion .imagenesIndexInformacion {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 50px 0px 0px;
 }
-
-.bicicletas {
-  border: 5px solid black;
-  margin: 1px 5px 1px 5px;
-  border-radius: 15px;
+.indexInformacion .imagenesIndexInformacion img {
+  width: 200px;
+  height: 200px;
+}
+.indexInformacion .informacionAdicional {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  font-family: cursive;
+  margin: 50px 0px 0px 10px;
+}
+.indexInformacion .informacionAdicional .informacionAdicionalDescipcion {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 300px;
+}
+.indexInformacion .informacionAdicional .informacionAdicionalDescipcion p {
+  margin: 20px 0px;
+}
+.indexInformacion .informacionAdicional .informacionAdicionalDescipcionAceite {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 300px;
+  margin: 0px 10px 0px 25px;
+}
+.indexInformacion .informacionAdicional .informacionAdicionalDescipcionAceite img {
+  width: 80px;
+  margin: 0px 0px 10px;
+}
+.indexInformacion .imagenesIndexInformacionTaller {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 50px 0px 0px;
+}
+.indexInformacion .imagenesIndexInformacionTaller img {
+  width: 500px;
+  height: 200px;
+}
+.indexInformacion .informacionAdicionalTaller {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  font-family: cursive;
+  margin: 50px 0px 0px 10px;
+}
+.indexInformacion .informacionAdicionalDescipcionTaller {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 300px;
 }
 
 /*pie de pagina*/
@@ -683,101 +903,82 @@ main {
   flex-wrap: wrap;
   align-items: center;
 }
-
-.footerLogo {
+.pieDePagina .footerLogo {
   display: flex;
   flex-wrap: wrap;
   flex-grow: 1;
 }
-
-.footerLogoMarca {
-  font-size: larger;
-  font-weight: bolder;
-}
-
-.cajaSeccionesFooter {
+.pieDePagina .cajaSeccionesFooter {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-content: center;
+  flex-direction: column;
   flex-grow: 1;
   justify-content: space-around;
 }
-
-.bloqueUno {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.bloqueDos {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.listaUno li {
-  list-style-type: none;
-  font-size: large;
-  font-style: inherit;
-  font-weight: bolder;
-  padding: 15px 0px 15px 0px;
-}
-
-.listaDos li {
-  list-style-type: none;
-  padding: 15px 0px 15px 0px;
-  font-size: large;
-  font-style: inherit;
-  font-weight: bolder;
-}
-
-.elementosFooter {
+.pieDePagina .cajaSeccionesFooter .bloqueUno {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  align-items: center;
-  flex-grow: 1;
 }
-
-.footerLogoMarca {
+.pieDePagina .cajaSeccionesFooter .bloqueUno .listaUno li {
+  list-style-type: none;
+  font-size: large;
+  font-style: inherit;
+  font-weight: bolder;
+  padding: 15px 0px 15px 0px;
+}
+.pieDePagina .cajaSeccionesFooter .bloqueDos {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
 }
-
-.footerLogoPago {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.pieDePagina .cajaSeccionesFooter .bloqueDos .listaDos li {
+  list-style-type: none;
+  padding: 15px 0px 15px 0px;
+  font-size: large;
+  font-style: inherit;
+  font-weight: bolder;
 }
-
-.footerLogoSociales {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.footerMenu {
+.pieDePagina .cajaSeccionesFooter .footerMenu {
   text-decoration: none;
   color: rgb(0, 0, 0);
   padding: 0px 15px 0px 15px;
   border-radius: 15px;
   transition: 0.5s;
 }
-
-.footerMenu:hover {
+.pieDePagina .cajaSeccionesFooter .footerMenu:hover {
   background-color: rgb(148, 216, 255);
 }
-
-.footerLogoPago {
+.pieDePagina .elementosFooter {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+}
+.pieDePagina .elementosFooter .footerLogoMarca {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   font-size: larger;
   font-weight: bolder;
 }
-
-.footerLogoSociales {
+.pieDePagina .elementosFooter .footerLogoPago {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   font-size: larger;
   font-weight: bolder;
 }
-
-.dondeEstamos {
+.pieDePagina .elementosFooter .footerLogoSociales {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: larger;
+  font-weight: bolder;
+}
+.pieDePagina .dondeEstamos {
   display: flex;
   flex-wrap: wrap;
 }/*# sourceMappingURL=style.css.map */

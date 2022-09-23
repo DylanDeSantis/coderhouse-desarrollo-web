@@ -1,37 +1,97 @@
-.bNav{
+header{
     width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
+    height: auto;
 }
-.logo{
-    width: 15%;
-    height: 100%;
-}
-.menu{
-    width: 85%;
+.bNav{
     display: flex;
-    justify-content:space-around;
-    flex-direction: row;
     flex-wrap: wrap;
-    list-style-type: none;
-    margin: 0px 50px 0px 50px;
-    padding: 0px 0px 0px 0px;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    .logo{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+    }
+    .menu{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+        list-style-type: none;
+        margin: 0px 50px 10px 50px;
+        padding: 0px 0px 0px 0px;
+        .navMenuItem a{
+            text-decoration: none;
+            font-size: large;
+            font-style: inherit;
+            font-weight: bolder;
+            color: rgb(0, 0, 0);  
+        }
+        .navMenu{
+            padding: 0px 15px 0px 15px;
+            border-radius: 15px;
+            transition: 0.5s;
+        }
+        .navMenu:hover{
+            background-color: gainsboro;
+        }
+    }
 }
-.navMenuItem a{
-    text-decoration: none;
-    font-size: large;
-    font-style: inherit;
-    font-weight: bolder;
-    color: rgb(0, 0, 0);  
-}
-.navMenu{
-    padding: 0px 15px 0px 15px;
-    border-radius: 15px;
-    transition: 0.5s;
-}
-.navMenu:hover{
-    background-color: gainsboro;
+    .menuIcon{
+        display: none;
+    }
+    .menuIcon, #check{
+        display: none;
+    }
+    @media (max-width:879px){
+        .menuIcon{
+            display: block;
+            position: fixed;
+        top: 15px;
+        right: 45px;
+        width: 10px;
+    }
+    .bNav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        .logo{
+            width: 150px;
+        }
+        .menu{
+            display: block;
+            position: fixed;
+            top: 65px;
+            left: -200%;
+            background-color: rgb(0, 144, 187);
+            width: 50%;
+            height: 60vh;
+            right: 245;
+            opacity: 1;
+            border: 2px solid black;
+        }
+        .navMenuItem{
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+        }
+        .navMenuItem a{
+            text-decoration: none;
+            font-size: large;
+            font-style: inherit;
+            font-weight: bolder;
+            color: rgb(255, 255, 255); 
+            height: 0; 
+        }
+    }  
+    #check:checked ~ ul{
+      left: auto;
+    }  
 }
