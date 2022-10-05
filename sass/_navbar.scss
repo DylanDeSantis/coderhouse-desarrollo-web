@@ -1,7 +1,4 @@
-header{
-    width: 100%;
-    height: auto;
-}
+
 .bNav{
     display: flex;
     flex-wrap: wrap;
@@ -41,16 +38,16 @@ header{
         }
     }
 }
+.menuIcon{
+    display: none;
+}
+.menuIcon, #check{
+    display: none;
+}
+@media (max-width:935px){
     .menuIcon{
-        display: none;
-    }
-    .menuIcon, #check{
-        display: none;
-    }
-    @media (max-width:879px){
-        .menuIcon{
-            display: block;
-            position: fixed;
+        display: block;
+        position: fixed;
         top: 15px;
         right: 45px;
         width: 10px;
@@ -92,6 +89,6 @@ header{
         }
     }  
     #check:checked ~ ul{
-      left: auto;
+    left: auto;
     }  
-}
+    }
